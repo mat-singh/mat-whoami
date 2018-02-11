@@ -1,2 +1,1 @@
-# mat-whoami
-API to get IP address, language
+# Backend Challenges boilerplate - package.json

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Timestamp microservice</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href="/public/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header">
+                Mat API: Timestamp microservice
+            </h1>
+            <blockquote>
+                What do I do:
+                <ul>1) If you pass a string as a parameter, I will check to see whether that string 
+                contains either a unix timestamp or a natural language date (example: January 1, 2016)</ul>
+                <ul>2) If it does, I will return both the Unix timestamp and the natural language form of that date.</ul>
+                <ul>3) If it does not contain a date or Unix timestamp, I will return null for both properties.</ul>
+            </blockquote>
+            <h3>Example usage:</h3>
+            <code>https://mat-timestamp.glitch.me/January 10, 2018</code><br>
+            <code>https://mat-timestamp.glitch.me/1515542400</code>
+            <h3>Example output:</h3>
+            <code>
+                {
+                  "unix": 1515542400,
+                  "natural": "January 10, 2018"
+                }
+            </code>
+        </div>
+    </body>
+</html>
